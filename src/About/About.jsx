@@ -1,29 +1,10 @@
 import '../Styles/About.css';
-import React, { useState } from 'react';
-import styled, { ThemeProvider } from 'styled-components';
-import { lightTheme, darkTheme, GlobalStyles } from '../Components/themes';
-
-const StyledApp = styled.div`
-  color: ${props => props.theme.fontColor};
-`;
 
 function About() {
 
-    const [theme, setTheme] = useState('light');
-
-    const themeToggle = () => {
-        theme === 'light' ? setTheme('dark') : setTheme('light');
-    }
-
+    
     return (
-          <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
-            <GlobalStyles />
             <div className="App">
-                <header>
-                    <StyledApp>
-                        <button onClick={() => themeToggle()} className="btn btn-dark">Change Theme</button>
-                    </StyledApp>
-                </header>
                 <section className="main">
                     <div className="main-text">
                         <h1>Fernando Haring</h1>
@@ -55,11 +36,11 @@ function About() {
                         <div className="sub-section-square">
                             <div className="sub-square">
                                 <p className="versionpdf">English Version</p>
-                                <a href="../Files/CV-Fer-English.pdf" target="blank" id="cv">Link on Image</a>
+                                <a href="https://pdfhost.io/v/Bc4lXCwjZ_CV_Fer" target="_blank" rel="noreferrer" id="cv"> </a>
                             </div>
                             <div className="sub-square">
                                 <p className="versionpdf">Spanish Version</p>
-                                <a href="../Files/CV-Fer-English.pdf" id="cv">Link on Image</a>
+                                <a href="https://pdfhost.io/v/CSkxUf6e4_CV_Fer" target="_blank" rel="noreferrer" id="cv"> </a>
                             </div>
                         </div>
                     </div>
@@ -71,7 +52,7 @@ function About() {
                         <br />
                         <div className="sub-section-square-git">
                             <div className="sub-square-git">
-                                <a href="https://github.com/KannonH2" target="blank" id="git"> </a>
+                                <a href="https://github.com/KannonH2" target="blank" classname="imagegit" id="git"> </a>
                             </div>
                         </div>
                     </div>
@@ -92,7 +73,6 @@ function About() {
                     <p>manaxtatu@gmail.com</p>
                 </footer>
             </div>
-        </ThemeProvider>
     )
 }
 

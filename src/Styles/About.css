@@ -4,9 +4,9 @@ body {
     transition: 0.3s;
     margin: 0;
     padding: 0;
-    background-color: rgb(244, 241, 241);
+    background-color: rgb(61, 61, 61);
     font-family: 'Poppins', sans-serif;
-    color:rgb(57, 57, 57);
+    color:rgb(241, 241, 241);
 }
 
 h1 {
@@ -29,14 +29,14 @@ p {
 }
 
 a {
-    color:rgb(162, 0, 255);
+    color:rgb(255, 255, 255);
     font-size: 20px;
     text-decoration: none;
     font-weight: 100;
 }
 
 .henrylink{
-    color:rgb(1, 3, 141) ;
+    color:rgb(237, 241, 0) ;
     font-size: 20px ;
     font-weight: bold;
 }
@@ -66,23 +66,24 @@ header {
 .square {
     width: 98%;
     margin: 1%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(102, 102, 102);
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
 }
+
 .square-tittle{
     width: 98%;
     margin: 1%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(102, 102, 102);
     text-align: center;
 }
 
 .sub-square {
     width: 49%;
     margin: 1%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(102, 102, 102);
     align-items: center;
     display: flex;
     flex-direction: column; 
@@ -104,7 +105,7 @@ header {
 
 
 #cv {
-    background-image: url("../images/pdf-logo.jpg");
+    background-image: url("../images/pdf-logo.png");
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -117,7 +118,7 @@ header {
     width: 98%;
     height: 90px;
     margin: 1%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(102, 102, 102);
     text-align: center;
 }
 
@@ -131,7 +132,7 @@ header {
 .sub-square-git {
     width: 98%;
     margin: 1%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(102, 102, 102);
     align-items: center;
     display: flex;
     flex-direction: column; 
@@ -153,7 +154,7 @@ header {
     width: 98%;
     height: 90px;
     margin: 1%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(102, 102, 102);
     text-align: center;
 }
 
@@ -167,7 +168,7 @@ header {
 .sub-square-linkedin {
     width: 98%;
     margin: 1%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(102, 102, 102);
     align-items: center;
     display: flex;
     flex-direction: column; 
@@ -234,7 +235,7 @@ header {
     background-image: url("../images/html-square.png");
     background-size: cover;
     background-color: rgb(175, 119, 227);
-    box-shadow: -60px 60px 20px rgb(50 50 50/ 15%);
+    box-shadow: -60px 60px 20px rgb(250 250 250/ 15%);
 }
 
 #html:before {
@@ -251,7 +252,7 @@ header {
     background-image: url("../images/css-square.png");
     background-size: cover;
     background-color: rgb(227, 119, 191);
-    box-shadow: -100px 100px 20px rgb(50 50 50/ 15%);
+    box-shadow: -100px 100px 20px rgb(250 250 250/ 15%);
 }
 
 #css:before {
@@ -268,7 +269,7 @@ header {
     background-image: url("../images/javascript-square.png");
     background-size: cover;
     background-color: rgb(119, 227, 186);
-    box-shadow: -40px 40px 20px rgb(50 50 50/ 15%);
+    box-shadow: -40px 40px 20px rgb(250 250 250/ 15%);
 }
 
 #javascript:before {
@@ -286,7 +287,7 @@ header {
     background-image: url("../images/react-square.png");
     background-size: cover;
     background-color: rgb(119, 193, 227);
-    box-shadow: -80px 80px 20px rgb(50 50 50/ 15%);
+    box-shadow: -80px 80px 20px rgb(250 250 250/ 15%);
 }
 
 #react:before {
@@ -309,12 +310,9 @@ footer {
     display: flex;
     justify-content: center;
     padding: 100px 30px;
-    background-color:rgb(136, 136, 136);
+    background-color:rgb(19, 19, 19);
 }
 
-.dark footer {
-    background-color:rgb(28, 28, 28);
-}
 
 @media only screen and (min-width: 970px) {
     .main-text {

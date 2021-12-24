@@ -9,15 +9,15 @@ body {
     color:rgb(255, 255, 255);
 }
 
-h1 {
-    font-size: 70px;
-    line-height: 70px;
+.name-home {
+    font-size: 5rem;
+    line-height: 5rem;
     font-weight: 300;
     margin: 10px 0;
     color:rgb(255, 255, 255);
 }
 
-h2 {
+.card-name {
     font-size: 40px;
     line-height: 40px;
     font-weight: 300;
@@ -26,21 +26,21 @@ h2 {
 }
 
 p {
-    margin: 0px;
-    font-size: 20px;
+    margin: 0;
+    font-size: 2rem;
     color:rgb(255, 255, 255);
 }
 
 a {
     color:rgb(243, 223, 255);
-    font-size: 20px;
+    font-size: 2rem;
     text-decoration: none;
     font-weight: 400;
 }
 
 .links-home {
     color:rgb(243, 223, 255);
-    font-size: 40px;
+    font-size: 3rem;
     text-decoration: none;
     font-weight: 400;
 }
@@ -52,60 +52,65 @@ header {
 }
 
 .main-home {
-    min-height: 100%;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 5rem;
     background-color: rgb(61, 61, 61);
     color:rgb(255, 255, 255);
 }
 
 .main-text-home {
-    padding: 30px;
-    margin-bottom: 100px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(61, 61, 61);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 300;
+    color:rgb(255, 255, 255);
+
 }
 
 .square-home {
     width: 98%;
-    margin: 1%;
+    height: 100%;
     background-color: rgb(102, 102, 102);
     text-align: center;
-    margin-top: 5rem;
-    
+    margin: 5rem 1% 1%;
+
 }
 
-#weather {
-
-  background-image: url("../images/weather.png");
-  background-size: cover;
-}
-
-#news {
-    background-image: url("http://fer-dev.com/images/news-app.png");
-    background-size: cover;
-}
-
-#videogames {
-    background-image: url("http://fer-dev.com/images/videogames.png");
-    background-size: cover;
-}
 .sub-square-home {
     width: 98%;
-    margin: 1%;
-    height: 350px;
+    height: 100%;
+    margin: 0 1% 1%;
     position: relative;
-    background-color: rgb(255, 255, 255);
     text-align: center;
+}
+
+.main-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(61, 61, 61);
 }
 
 .sub-section-home{
-    width: 100%;
+    width: 60%;
     height: 100%;
-    display:flex;
+    display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(61, 61, 61);
 }
 
@@ -114,7 +119,8 @@ header {
     width: 50%;
     height: 350px;
     display: flex;
-    margin-bottom: 100px;
+    margin-bottom: 4rem;
+    margin-left: 8rem;
 }
 
 .cube-home {
@@ -213,39 +219,30 @@ header {
     background-color: rgb(188, 200, 221);
 }
 
-footer {
+.footer {
     display: flex;
     justify-content: center;
-    padding: 50px 30px;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
     background-color:rgb(19, 19, 19);
 }
 
 
-
 @media only screen and (max-width: 1200px) {
     .hero-image-home {
-        /* display: none; */
-        width: 10vw;
-    }
-    .sub-section-home {
-        display: flex;
-        flex-direction: column;
-        width: auto;
-        height: auto;
-    }
-
-    .sub-square-home {
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
+        display: none;
     }
 
     .main-home {
         flex-direction: column;
-        align-items: initial;
-        width: 80vw;
-
+        align-items: center;
+    }
+    .name-home {
+        font-size: 3.5rem;
+        line-height: 3rem;
+        font-weight: 300;
+        color:rgb(255, 255, 255);
     }
 }
 
@@ -259,17 +256,23 @@ footer {
     }
 
     .sub-square-home {
-        width: 100%;
-        height: auto;
         display: flex;
         justify-content: center;
     }
 
     .main-home {
+        width: 100%;
+        height: 100%;
+        display: flex;
         flex-direction: column;
-        align-items: initial;
-        width: 90vw;
+        align-items: center;
 
+    }
+    .name-home {
+        font-size: 3rem;
+        line-height: 3rem;
+        font-weight: 300;
+        color:rgb(255, 255, 255);
     }
   
 }

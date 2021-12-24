@@ -18,7 +18,7 @@ export const SidebarData = [
   },
   {
     title: 'Contact',
-    path: '#footer',
+    path: '/Contact',
     icon: <FaIcons.FaEnvelopeOpenText />,
     cName: 'nav-text'
   },

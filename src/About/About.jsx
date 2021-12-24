@@ -69,7 +69,7 @@ function About() {
                         </div>
                     </div>
                 </section>
-                <footer id="footer">
+                <footer className="footer">
                     <p>manaxtatu@gmail.com</p>
                 </footer>
             </div>

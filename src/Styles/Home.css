@@ -74,7 +74,18 @@ header {
     line-height: 2rem;
     font-weight: 300;
     color:rgb(255, 255, 255);
+    animation: moverArriba 3s ease-out;
+}
 
+@keyframes moverArriba {
+    0% {
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 
 .square-home {
@@ -121,6 +132,18 @@ header {
     display: flex;
     margin-bottom: 4rem;
     margin-left: 8rem;
+    animation: moverAbajo 3s ease-out;
+}
+
+@keyframes moverAbajo {
+    0% {
+        opacity: 0;
+        transform: translateY(-10rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 
 .cube-home {

@@ -1,13 +1,44 @@
 
 .navbar {
     background-color: #888888;
-    height: 100%;
+    height: 4rem;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
+    flex-direction: row;
     align-items: center;
   }
   
-  .menu-bars {
+  .btn {
+    animation: moverDerecha 2s ease-in;
+    width: 10rem;
+    height: 70%;
+    background-color: #222222;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #b9b9b9;
+    margin: 0.5rem;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  @keyframes moverDerecha {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+  /* .menu-bars {
     margin-left: 2rem;
     font-size: 2rem;
     background: none;
@@ -35,7 +66,7 @@
   
   .nav-text {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     padding: 8px 0px 8px 16px;
     list-style: none;
@@ -68,7 +99,7 @@
     width: 100%;
     height: 80px;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
 
   }
@@ -79,7 +110,7 @@
   
   .navbar .navbar-title {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
   }
 
   .nav-icon {
@@ -89,4 +120,4 @@
 
   span {
     margin-left: 16px;
-  }
+  } */

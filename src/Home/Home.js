@@ -1,8 +1,10 @@
 import '../Styles/Home.css';
+import InfiniteScroll from 'react-infinite-scroller';
 import weather from "../images/weather.png";
 import weatherApi from "../images/news-app.png";
 import games from "../images/games.png";
 import flight from "../images/flights.png";
+import netflix from "../images/netflix.png";
 
 
 function Home() {
@@ -24,7 +26,10 @@ function Home() {
                     <div className="cube-home" id="css-home"/>
                 </div>
             </section>
+
+            {/* Start of Projects */}
             <div className="main-section">
+                {/* First Project */}
                 <section className="sub-section-home">
                     <div className="square-home">
                         <h2 className="card-name">Dev-Sky</h2>
@@ -37,6 +42,7 @@ function Home() {
 
                     </div>
                 </section>
+                {/* Second Project */}
                 <section className="sub-section-home">
                     <div className="square-home">
                         <h2 className="card-name">Weather APP</h2>
@@ -49,6 +55,7 @@ function Home() {
 
                     </div>
                 </section>
+                {/* Third Project */}
                 <section className="sub-section-home">
                     <div className="square-home">
                         <h2 className="card-name">API Weather Notices</h2>
@@ -59,6 +66,7 @@ function Home() {
                         <img src={weatherApi} alt="" className="sub-square-home"/>
                     </div>
                 </section>
+                {/* Fourth Project */}
                 <section className="sub-section-home">
                     <div className="square-home">
                         <h2 className="card-name">VideoGames APP</h2>
@@ -72,6 +80,17 @@ function Home() {
                         <img src={games} alt="" className="sub-square-home"/>
                     </div>
                 </section>
+                {/* Fifth Project */}
+                <section className="sub-section-home">
+                    <div className="square-home">
+                        <h2 className="card-name">Netflix Clone</h2>
+                        <p>Basic Clone of Netflix, make it using React, Javascript, Datastac and GraphQL</p>
+                        <br/>
+                        <a className="links-home" href="https://github.com/KannonH2/NetflixClone-graphql-datastax" target="_blank"
+                           rel="noreferrer">Check it out!</a>
+                        <img src={netflix} alt="" className="sub-square-home"/>
+                    </div>
+                </section>         
             </div>
             <footer className="footer">
                     <p>manaxtatu@gmail.com</p>
